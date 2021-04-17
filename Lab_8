@@ -4,11 +4,6 @@ public class Main {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         System.out.println("Введите строку состоящую из нескольких слов: ");
-        int s = 0;
-        String str1 = in.nextLine();
-        String[]words = str1.split(" ");
-        for (String word:words){
-            s += 1;
-        }
-        System.out.println("Кол-во слов: " + s);
+        String str = in.nextLine();
+        System.out.println("Кол-во слов: " + str.split(" ").length);
     }}
